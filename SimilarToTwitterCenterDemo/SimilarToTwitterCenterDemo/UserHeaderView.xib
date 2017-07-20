@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="CLH-17-MsE" customClass="UserHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="263"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default_background" translatesAutoresizingMaskIntoConstraints="NO" id="UOZ-yJ-MSy">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar_50" translatesAutoresizingMaskIntoConstraints="NO" id="7Xt-jW-ghx">
+                    <rect key="frame" x="20" y="122.5" width="75" height="75"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="7Xt-jW-ghx" secondAttribute="height" multiplier="1:1" id="ANT-gL-zEf"/>
+                        <constraint firstAttribute="height" constant="75" id="jZc-p0-y0J"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="38"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.89803921568627454" green="0.89803921568627454" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Elina" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KUO-bZ-O7N">
+                    <rect key="frame" x="20" y="205" width="30.5" height="17"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="17" id="Oe6-0c-ohG"/>
+                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="150" id="gjD-SW-lvO"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ukz-za-H6p">
+                    <rect key="frame" x="20" y="226" width="72" height="27"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="27" id="uhf-SH-5A6"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="53 Following">
+                        <color key="titleColor" red="0.53333333333333333" green="0.53333333333333333" blue="0.53333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e6k-9C-Jkj">
+                    <rect key="frame" x="102" y="226" width="72" height="27"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="53 Followers">
+                        <color key="titleColor" red="0.53333333329999999" green="0.53333333329999999" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="e6k-9C-Jkj" firstAttribute="top" secondItem="Ukz-za-H6p" secondAttribute="top" id="43d-IG-VH8"/>
+                <constraint firstItem="UOZ-yJ-MSy" firstAttribute="leading" secondItem="CLH-17-MsE" secondAttribute="leading" id="6It-bg-uqm"/>
+                <constraint firstItem="e6k-9C-Jkj" firstAttribute="leading" secondItem="Ukz-za-H6p" secondAttribute="trailing" constant="10" id="BHz-ik-dox"/>
+                <constraint firstItem="KUO-bZ-O7N" firstAttribute="top" secondItem="UOZ-yJ-MSy" secondAttribute="bottom" constant="45" id="Eee-zI-NYE"/>
+                <constraint firstAttribute="bottom" secondItem="Ukz-za-H6p" secondAttribute="bottom" constant="10" id="S7y-qH-iuU"/>
+                <constraint firstItem="7Xt-jW-ghx" firstAttribute="centerY" secondItem="UOZ-yJ-MSy" secondAttribute="bottom" id="W5Q-sA-JdH"/>
+                <constraint firstItem="KUO-bZ-O7N" firstAttribute="leading" secondItem="CLH-17-MsE" secondAttribute="leading" constant="20" id="Wqd-5q-bP5"/>
+                <constraint firstAttribute="trailing" secondItem="UOZ-yJ-MSy" secondAttribute="trailing" id="YA0-Jn-0nI"/>
+                <constraint firstItem="UOZ-yJ-MSy" firstAttribute="top" secondItem="CLH-17-MsE" secondAttribute="top" id="bKJ-h3-mZy"/>
+                <constraint firstItem="7Xt-jW-ghx" firstAttribute="leading" secondItem="CLH-17-MsE" secondAttribute="leading" constant="20" id="hc8-Qq-dk7"/>
+                <constraint firstItem="KUO-bZ-O7N" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="CLH-17-MsE" secondAttribute="leading" constant="14" id="t7C-eU-tlb"/>
+                <constraint firstItem="Ukz-za-H6p" firstAttribute="leading" secondItem="CLH-17-MsE" secondAttribute="leading" constant="20" id="ycI-Yt-09z"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="avatarImageView" destination="7Xt-jW-ghx" id="Vk2-KT-ViN"/>
+                <outlet property="bgImgView" destination="UOZ-yJ-MSy" id="eQA-HA-0cU"/>
+                <outlet property="followersBtn" destination="e6k-9C-Jkj" id="3PB-9j-3g1"/>
+                <outlet property="followingBtn" destination="Ukz-za-H6p" id="fo4-1p-ftx"/>
+                <outlet property="userNameLabel" destination="KUO-bZ-O7N" id="TFR-qv-dRr"/>
+            </connections>
+            <point key="canvasLocation" x="-478" y="-94"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="avatar_50" width="50" height="50"/>
+        <image name="default_background" width="320" height="160"/>
+    </resources>
+</document>
